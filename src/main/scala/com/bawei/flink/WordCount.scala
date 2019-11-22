@@ -6,7 +6,7 @@ object WordCount {
   def main(args: Array[String]): Unit = {
     // 1. 环境
     val environment = ExecutionEnvironment.getExecutionEnvironment
-    val line = environment.readTextFile("E:\\workspace_idea\\Flink\\src\\main\\resources\\qiaoyuan.txt")
+    val line = environment.readTextFile("hdfs://hadoop102:9000/applog/flink/input.txt")
 
     // 2. 计算
     val result = line.flatMap(_.split(" "))

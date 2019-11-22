@@ -1,0 +1,4 @@
+transactionId,customer,itemId,amountPaid
+         1,1,1,100
+         2,2,2,120
+         3,3,3,250
